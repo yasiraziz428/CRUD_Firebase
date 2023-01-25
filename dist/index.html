@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Firebase App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="center">Add a Document</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <form id="add-form">
+          <div class="content">
+            <input
+              name="title"
+              type="text"
+              spellcheck="false"
+              placeholder="title"
+              required
+              autocomplete="off"
+            />
+            <input
+              name="author"
+              type="text"
+              spellcheck="false"
+              placeholder="author"
+              required
+              autocomplete="off"
+            />
+            <div class="separator"></div>
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <header class="center">Delete a Document</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <form id="delete-form">
+          <div class="content">
+            <input
+              name="book_id"
+              type="text"
+              spellcheck="false"
+              placeholder="id"
+              required
+              autocomplete="off"
+            />
+            <div class="separator"></div>
+            <button type="submit">Delete</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
